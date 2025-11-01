@@ -1,4 +1,5 @@
-﻿using CodeBase.Infrastructure.States;
+﻿using CodeBase.Infrastructure.Services;
+using CodeBase.Infrastructure.States;
 using CodeBase.Logic;
 using UnityEngine;
 
@@ -10,7 +11,7 @@ namespace CodeBase.Infrastructure.EntryPoint
 
         private void Awake()
         {
-            _game = new Game(this);
+            _game = new Game(this, AllServices.Container);
             _game.StateMachine.Enter<BootstrapState>();
             
             DontDestroyOnLoad(gameObject);

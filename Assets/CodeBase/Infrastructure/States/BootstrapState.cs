@@ -1,4 +1,8 @@
-﻿using CodeBase.Logic;
+﻿using CodeBase.Infrastructure.Factory;
+using CodeBase.Infrastructure.Services;
+using CodeBase.Infrastructure.Services.Input;
+using CodeBase.Infrastructure.Services.StaticData;
+using CodeBase.Logic;
 
 namespace CodeBase.Infrastructure.States
 {
@@ -31,7 +35,9 @@ namespace CodeBase.Infrastructure.States
 
         private void RegisterServices()
         {
-            //AllServices.Container
+            AllServices.Container.RegisterSingle<IStaticDataService>(new  StaticDataService());
+            AllServices.Container.RegisterSingle<IInputService>(new InputService());
+            AllServices.Container.RegisterSingle<IGameFactory>(new GameFactory(AllServices.Container.Single<IStaticDataService>()));
         }
 
         private void EnterLoadLevel() =>
