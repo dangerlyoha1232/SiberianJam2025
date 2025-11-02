@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace CodeBase.Infrastructure.States
 {
-    public class GameStateMachine
+    public class GameStateMachine : IGameStateMachine
     {
         private readonly Dictionary<Type, IExitableState> _states;
         private IExitableState _activeState;
@@ -19,6 +19,7 @@ namespace CodeBase.Infrastructure.States
                 [typeof(BootstrapState)] = new BootstrapState(this, sceneLoader),
                 [typeof(LoadLevelState)] = new LoadLevelState(this, sceneLoader,  services),
                 [typeof(GameLoopState)] = new GameLoopState(this),
+                [typeof(RestartGameState)] = new RestartGameState(this, sceneLoader),
             };
         }
         

@@ -15,12 +15,12 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Hero
   - Employee
-  - 
-  - 
-  - 
-  - 
+  - ManaRestoreZone
+  - AggroZone
+  - Environment
+  - HeroDefeatZone
   - 
   - 
   - 

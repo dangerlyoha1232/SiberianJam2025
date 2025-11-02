@@ -35,6 +35,7 @@ namespace CodeBase.Infrastructure.States
 
         private void RegisterServices()
         {
+            AllServices.Container.RegisterSingle<IGameStateMachine>(_stateMachine);
             AllServices.Container.RegisterSingle<IStaticDataService>(new  StaticDataService());
             AllServices.Container.RegisterSingle<IInputService>(new InputService());
             AllServices.Container.RegisterSingle<IGameFactory>(new GameFactory(AllServices.Container.Single<IStaticDataService>()));
