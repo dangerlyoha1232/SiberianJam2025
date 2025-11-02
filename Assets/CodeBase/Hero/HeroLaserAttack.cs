@@ -13,7 +13,8 @@ namespace CodeBase.Hero
         [SerializeField] private GameObject _laserStartPoint;
         [SerializeField] private float _laserDistance = 3f;
         [SerializeField] private LayerMask _employeeMask;
-        [SerializeField] private float _manaDrainCooldown = 1f; 
+        [SerializeField] private float _manaDrainCooldown = 1f;
+        [SerializeField] private float _manaRestorePerSecond = 10f;
         private float _actualCooldown;
 
         private IInputService _inputService;
@@ -32,6 +33,8 @@ namespace CodeBase.Hero
                 OnManaCapacityChanged?.Invoke();
             }
         }
+
+        public bool IsOnRestoreManaZone;
 
         private float ManaDrainPerSecond { get; set; }
 
@@ -69,6 +72,9 @@ namespace CodeBase.Hero
             {
                 _lineRenderer.enabled = false;
             }
+            
+            if (IsOnRestoreManaZone)
+                RestoreMana();
         }
 
         private void CastLaser()
@@ -112,7 +118,8 @@ namespace CodeBase.Hero
 
         public void RestoreMana()
         {
-            _currentMana = _maxMana;
+            _currentMana += _manaRestorePerSecond * Time.deltaTime;
+            _currentMana = Mathf.Min(_currentMana, _maxMana);
             OnManaCapacityChanged?.Invoke();
         }
     }
