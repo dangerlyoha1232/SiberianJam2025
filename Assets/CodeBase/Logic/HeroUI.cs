@@ -20,5 +20,10 @@ namespace CodeBase.Logic
         {
             _statusBar.SetValue(_manaHolder.ManaCapacity);
         }
+
+        private void OnDestroy()
+        {
+            _manaHolder.OnManaCapacityChanged -= ChangeStatusBar;
+        }
     }
 }

@@ -9,17 +9,19 @@ namespace CodeBase.Employee
         [SerializeField] private float _manaToRecruit;
 
         public bool IsRecruited;
-        
-        private float _recruitProgress;
+        public event Action OnManaChanged;
+
+        public float RecruitProgress {get; set;}
+        public float ManaToRecruit => _manaToRecruit;
 
         private void Start()
         {
-            _recruitProgress = 0;
+            RecruitProgress = 0;
         }
 
         private void Update()
         {
-            if (_recruitProgress >= _manaToRecruit)
+            if (RecruitProgress >= _manaToRecruit)
                 IsRecruited = true;
         }
 
@@ -29,8 +31,9 @@ namespace CodeBase.Employee
                 return;
             
             float actual = Mathf.Abs(amount);
-            _recruitProgress += actual;
-            Debug.Log(_recruitProgress);
+            RecruitProgress += actual;
+            OnManaChanged?.Invoke();
+            Debug.Log(RecruitProgress);
         }
     }
 }
