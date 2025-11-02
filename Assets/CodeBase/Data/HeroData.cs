@@ -6,6 +6,7 @@ namespace CodeBase.Data
     public class HeroData : ScriptableObject
     {
         public float ManaCapacity;
+        public float ManaDrainPerSecond;
         public float Speed;
     }
 }

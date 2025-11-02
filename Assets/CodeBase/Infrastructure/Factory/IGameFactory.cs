@@ -5,7 +5,7 @@ namespace CodeBase.Infrastructure.Factory
 {
     public interface IGameFactory : IService
     {
-        void CreateHero(GameObject at);
-        void CreateHud();
+        GameObject CreateHero(GameObject at);
+        GameObject CreateHud();
     }
 }

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2091944587072842898}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8, y: 0.59, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -114,7 +114,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CodeBase.Hero.HeroMovement
   _rigidbody2D: {fileID: 8319703186715514039}
-  _speed: 5
 --- !u!114 &1853280493777846485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +128,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CodeBase.Hero.HeroLaserAttack
   _laserStartPoint: {fileID: 7889654856363905356}
   _laserDistance: 3
+  _employeeMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &6818643241308376719
 GameObject:
   m_ObjectHideFlags: 0

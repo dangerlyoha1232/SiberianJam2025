@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8710a5ef2e1f94a4b92ee2d427bf94f9, type: 3}
-  m_Name: HeroData
-  m_EditorClassIdentifier: Assembly-CSharp::CodeBase.StaticData.HeroData
-  ManaCapacity: 100
-  ManaDrainPerSecond: 10
-  Speed: 5
+  m_Script: {fileID: 11500000, guid: 8e879badfadc44248ed34529c2664455, type: 3}
+  m_Name: EmployeeData
+  m_EditorClassIdentifier: Assembly-CSharp::CodeBase.Data.EmployeeData
+  Type: 0
+  ManaToRecruit: 50
+  RecruitResist: 0
+  Prefab: {fileID: 0}

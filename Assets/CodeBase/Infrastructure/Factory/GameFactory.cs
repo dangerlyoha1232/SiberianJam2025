@@ -13,19 +13,24 @@ namespace CodeBase.Infrastructure.Factory
             _staticDataService = staticDataService;
         }
         
-        public void CreateHero(GameObject at)
+        public GameObject CreateHero(GameObject at)
         {
             GameObject prefab = Resources.Load<GameObject>("Hero/Hero");
             GameObject hero = GameObject.Instantiate(prefab, at.transform.position, Quaternion.identity);
             
             var movement = hero.GetComponent<HeroMovement>();
-            movement.Speed = _staticDataService.GetHeroData().Speed;
+            movement.Construct(_staticDataService.GetHeroData().Speed);
+
+            var laserAttack = hero.GetComponent<HeroLaserAttack>();
+            laserAttack.Construct(_staticDataService.GetHeroData().ManaCapacity, _staticDataService.GetHeroData().ManaDrainPerSecond);
+            
+            return hero;
         }
 
-        public void CreateHud()
+        public GameObject CreateHud()
         {
-            var prefab = Resources.Load("Hud/Hud");
-            GameObject.Instantiate(prefab);
+            var prefab = Resources.Load<GameObject>("Hud/Hud");
+            return GameObject.Instantiate(prefab);
         }
     }
 }
