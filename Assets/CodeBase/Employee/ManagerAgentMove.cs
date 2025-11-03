@@ -9,10 +9,11 @@ namespace CodeBase.Employee
         public NavMeshAgent NavMeshAgent;
         public AgroZone AgroZone;
 
-        [SerializeField] private float _patrolSpeed;
-        [SerializeField] private float _chaseSpeed;
         [SerializeField] private float _pointReachThreshold;
-        [SerializeField] private List<GameObject> _patrolPath;
+
+        private float PatrolSpeed {get; set;}
+        private float ChaseSpeed {get; set;}
+        private List<GameObject> PatrolPath {get; set;}
 
         private int _currentPointIndex = 0;
 
@@ -20,16 +21,23 @@ namespace CodeBase.Employee
         private bool _isHeroNoticed;
 
 
+        public void Construct(float patrolSpeed, float chaseSpeed, List<GameObject> patrolPath)
+        {
+            PatrolSpeed = patrolSpeed;
+            ChaseSpeed = chaseSpeed;
+            PatrolPath = patrolPath;
+        }
+
         private void Start()
         {
             NavMeshAgent.updateRotation = false;
             NavMeshAgent.updateUpAxis = false;
-            NavMeshAgent.speed = _patrolSpeed;
+            NavMeshAgent.speed = PatrolSpeed;
 
             AgroZone.HeroNoticed += HeroNoticed;
 
-            if (_patrolPath != null)
-                NavMeshAgent.SetDestination(_patrolPath[_currentPointIndex].transform.position);
+            if (PatrolPath != null)
+                NavMeshAgent.SetDestination(PatrolPath[_currentPointIndex].transform.position);
         }
 
         private void HeroNoticed()
@@ -40,12 +48,13 @@ namespace CodeBase.Employee
 
         private void Update()
         {
-            if (_patrolPath.Count == 0)
+            if (PatrolPath.Count == 0)
                 return;
             
             if (_isHeroNoticed)
             {
                 NavMeshAgent.SetDestination(_hero.transform.position);
+                NavMeshAgent.speed = ChaseSpeed;
             }
             else if (!NavMeshAgent.pathPending && NavMeshAgent.remainingDistance < _pointReachThreshold)
             {
@@ -56,8 +65,13 @@ namespace CodeBase.Employee
         
         private void MoveToNextPoint()
         {
-            _currentPointIndex = (_currentPointIndex + 1) % _patrolPath.Count;
-            NavMeshAgent.SetDestination(_patrolPath[_currentPointIndex].transform.position);
+            _currentPointIndex = (_currentPointIndex + 1) % PatrolPath.Count;
+            NavMeshAgent.SetDestination(PatrolPath[_currentPointIndex].transform.position);
+        }
+
+        private void OnDestroy()
+        {
+            AgroZone.HeroNoticed -= HeroNoticed;
         }
     }
 }

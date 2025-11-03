@@ -4,6 +4,7 @@ namespace CodeBase.Infrastructure.States
 {
     public class RestartGameState : IPayloadedState<string>
     {
+        private const string LevelName = "Level1";
         private GameStateMachine _stateMachine;
         private SceneLoader _sceneLoader;
         
@@ -25,7 +26,7 @@ namespace CodeBase.Infrastructure.States
 
         private void OnLoaded()
         {
-            _stateMachine.Enter<LoadLevelState, string>("SampleScene");
+            _stateMachine.Enter<LoadLevelState, string>(LevelName);
         }
     }
 }

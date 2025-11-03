@@ -1,4 +1,7 @@
-﻿using CodeBase.Hero;
+﻿using System.Collections.Generic;
+using CodeBase.Data;
+using CodeBase.Employee;
+using CodeBase.Hero;
 using CodeBase.Infrastructure.Services.StaticData;
 using UnityEngine;
 
@@ -31,6 +34,28 @@ namespace CodeBase.Infrastructure.Factory
         {
             var prefab = Resources.Load<GameObject>("Hud/Hud");
             return GameObject.Instantiate(prefab);
+        }
+
+        public GameObject ConstructEmployee(EmployeeType type, Transform parent)
+        {
+            EmployeeData employeeData = _staticDataService.ForEmployee(type);
+            GameObject employee = GameObject.Instantiate(employeeData.Prefab, parent.position, Quaternion.identity, parent);
+
+            var recruitment = employee.GetComponent<EmployeeRecruitment>();
+            recruitment.ManaToRecruit = employeeData.ManaToRecruit;
+            
+            return employee;
+        }
+
+        public GameObject ConstructEmployee(EmployeeType type, Transform parent, List<GameObject> patrolPath)
+        {
+            EmployeeData employeeData = _staticDataService.ForEmployee(type);
+            GameObject employee = GameObject.Instantiate(employeeData.Prefab, parent.position, Quaternion.identity, parent);
+
+            var managerAgentMove = employee.GetComponent<ManagerAgentMove>();
+            managerAgentMove.Construct(employeeData.PatrolSpeed, employeeData.ChaseSpeed, patrolPath);
+            
+            return employee;
         }
     }
 }

@@ -6,8 +6,14 @@ namespace CodeBase.Data
     public class EmployeeData : ScriptableObject
     {
         public EmployeeType Type;
+        [Header("Employee Stats")]
         public float ManaToRecruit;
-        public float RecruitResist;
+        
+        [Header("Manager Stats")]
+        public float PatrolSpeed;
+        public float ChaseSpeed;
+        
+        [Header("Actor Prefab")]
         public GameObject Prefab;
     }
 }

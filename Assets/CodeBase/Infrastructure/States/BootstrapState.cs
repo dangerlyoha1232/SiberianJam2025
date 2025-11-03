@@ -9,15 +9,18 @@ namespace CodeBase.Infrastructure.States
     public class BootstrapState : IState
     {
         private const string InitialScene = "Initial";
-        private const string NextScene = "SampleScene";
+        private const string NextScene = "Level1";
 
         private GameStateMachine _stateMachine;
         private readonly SceneLoader _sceneLoader;
+        
+        private AllServices _services;
 
-        public BootstrapState(GameStateMachine stateMachine, SceneLoader sceneLoader)
+        public BootstrapState(GameStateMachine stateMachine, SceneLoader sceneLoader, AllServices services)
         {
             _stateMachine = stateMachine;
             _sceneLoader = sceneLoader;
+            _services = services;
             
             RegisterServices();
         }
@@ -35,10 +38,17 @@ namespace CodeBase.Infrastructure.States
 
         private void RegisterServices()
         {
-            AllServices.Container.RegisterSingle<IGameStateMachine>(_stateMachine);
-            AllServices.Container.RegisterSingle<IStaticDataService>(new  StaticDataService());
-            AllServices.Container.RegisterSingle<IInputService>(new InputService());
-            AllServices.Container.RegisterSingle<IGameFactory>(new GameFactory(AllServices.Container.Single<IStaticDataService>()));
+            _services.RegisterSingle<IGameStateMachine>(_stateMachine);
+            RegisterStaticData();
+            _services.RegisterSingle<IInputService>(new InputService());
+            _services.RegisterSingle<IGameFactory>(new GameFactory(AllServices.Container.Single<IStaticDataService>()));
+        }
+
+        private void RegisterStaticData()
+        {
+            IStaticDataService staticDataService = new StaticDataService();
+            staticDataService.LoadEmployersData();
+            _services.RegisterSingle(staticDataService);
         }
 
         private void EnterLoadLevel() =>

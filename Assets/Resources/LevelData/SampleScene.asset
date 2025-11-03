@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8710a5ef2e1f94a4b92ee2d427bf94f9, type: 3}
-  m_Name: HeroData
-  m_EditorClassIdentifier: Assembly-CSharp::CodeBase.StaticData.HeroData
-  ManaCapacity: 40
-  ManaDrainPerSecond: 10
-  Speed: 5
+  m_Script: {fileID: 11500000, guid: a54f160bb4b540feb58500fe1a6bf6c9, type: 3}
+  m_Name: SampleScene
+  m_EditorClassIdentifier: Assembly-CSharp::CodeBase.Data.LevelData
+  Type: 0
+  LevelSceneName: SampleScene
+  IsCompleted: 0

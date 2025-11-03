@@ -6,13 +6,15 @@ namespace CodeBase.Employee
 {
     public class EmployeeRecruitment : MonoBehaviour, ITakeMana
     {
-        [SerializeField] private float _manaToRecruit;
+        public float ManaToRecruit {get; set;}
 
         public bool IsRecruited;
         public event Action OnManaChanged;
+        
+        public event Action OnRecruited;
 
         public float RecruitProgress {get; set;}
-        public float ManaToRecruit => _manaToRecruit;
+        
 
         private void Start()
         {
@@ -21,8 +23,14 @@ namespace CodeBase.Employee
 
         private void Update()
         {
-            if (RecruitProgress >= _manaToRecruit)
+            if (IsRecruited)
+                return;
+            
+            if (RecruitProgress >= ManaToRecruit)
+            {
                 IsRecruited = true;
+                OnRecruited?.Invoke();
+            }
         }
 
         public void TakeMana(float amount)

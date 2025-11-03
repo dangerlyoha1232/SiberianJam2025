@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e879badfadc44248ed34529c2664455, type: 3}
-  m_Name: EmployeeData
+  m_Name: ManagerData
   m_EditorClassIdentifier: Assembly-CSharp::CodeBase.Data.EmployeeData
-  Type: 0
-  ManaToRecruit: 15
-  PatrolSpeed: 0
-  ChaseSpeed: 0
-  Prefab: {fileID: 5239902851653668508, guid: 3ca855e4dfba9e849a39bab80cc79caa, type: 3}
+  Type: 1
+  ManaToRecruit: 0
+  PatrolSpeed: 3
+  ChaseSpeed: 5
+  Prefab: {fileID: 885125550598996752, guid: f8d6623af3497fe4bbc86d18d99801bf, type: 3}

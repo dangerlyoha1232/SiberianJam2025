@@ -7,6 +7,8 @@ namespace CodeBase.Hero
 {
     public class HeroDefeat : MonoBehaviour, IHeroDefeat
     {
+        private const string Initial = "Initial";
+        
         public HeroMovement _heroMovement;
         public HeroLaserAttack _heroLaser;
         
@@ -33,7 +35,7 @@ namespace CodeBase.Hero
         {
             Debug.Log("You lose");
             yield return new WaitForSeconds(5);
-            _stateMachine.Enter<RestartGameState, string>("Initial");
+            _stateMachine.Enter<RestartGameState, string>(Initial);
         }
     }
 }

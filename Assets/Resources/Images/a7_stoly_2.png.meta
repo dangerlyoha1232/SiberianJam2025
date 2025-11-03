@@ -79,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 180
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -155,7 +155,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: a7_stoly_2_0
+      name: stol_horizontal
       rect:
         serializedVersion: 2
         x: 82
@@ -163,7 +163,7 @@ TextureImporter:
         width: 378
         height: 172
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -177,7 +177,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_1
+      name: monik_back_right
       rect:
         serializedVersion: 2
         x: 515
@@ -185,7 +185,7 @@ TextureImporter:
         width: 118
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -199,7 +199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_2
+      name: monil_back
       rect:
         serializedVersion: 2
         x: 673
@@ -207,7 +207,7 @@ TextureImporter:
         width: 132
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,7 +221,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_3
+      name: lampa
       rect:
         serializedVersion: 2
         x: 849
@@ -229,7 +229,7 @@ TextureImporter:
         width: 110
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_4
+      name: trava_v_gorshke
       rect:
         serializedVersion: 2
         x: 993
@@ -251,7 +251,7 @@ TextureImporter:
         width: 79
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -265,7 +265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_5
+      name: monik_forward_left
       rect:
         serializedVersion: 2
         x: 1106
@@ -273,7 +273,7 @@ TextureImporter:
         width: 118
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -287,7 +287,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_6
+      name: monik_forward
       rect:
         serializedVersion: 2
         x: 1270
@@ -295,7 +295,7 @@ TextureImporter:
         width: 132
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -309,15 +309,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_7
+      name: chasi
       rect:
         serializedVersion: 2
-        x: 1516
+        x: 1518
         y: 883
         width: 167
         height: 167
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -331,15 +331,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_8
+      name: yashiki_horizontal
       rect:
         serializedVersion: 2
-        x: 86
+        x: 88
         y: 353
         width: 278
         height: 277
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -353,7 +353,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_9
+      name: yashiki_vertical
       rect:
         serializedVersion: 2
         x: 488
@@ -361,7 +361,7 @@ TextureImporter:
         width: 114
         height: 396
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_10
+      name: yashiki_horizontal_1
       rect:
         serializedVersion: 2
         x: 760
@@ -383,7 +383,7 @@ TextureImporter:
         width: 278
         height: 277
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -397,7 +397,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_11
+      name: yashiki_vertical_1
       rect:
         serializedVersion: 2
         x: 1162
@@ -405,7 +405,7 @@ TextureImporter:
         width: 114
         height: 396
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -419,7 +419,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_12
+      name: skaf_horizontal
       rect:
         serializedVersion: 2
         x: 1364
@@ -427,7 +427,7 @@ TextureImporter:
         width: 275
         height: 352
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -441,15 +441,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_13
+      name: skaf_vartical
       rect:
         serializedVersion: 2
-        x: 1736
+        x: 1734
         y: 309
         width: 156
         height: 467
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -463,7 +463,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a7_stoly_2_14
+      name: voda
       rect:
         serializedVersion: 2
         x: 931
@@ -471,7 +471,7 @@ TextureImporter:
         width: 116
         height: 229
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -488,7 +488,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a4b3a1a2707e1a14db1fc131c7b21620
     internalID: 0
     vertices: []
     indices: 
@@ -498,21 +498,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      a7_stoly_2_0: 1444868977726475226
-      a7_stoly_2_1: 62848490007788659
-      a7_stoly_2_10: -5527274437145359805
-      a7_stoly_2_11: 5010622146891918300
-      a7_stoly_2_12: -6330793074704337006
-      a7_stoly_2_13: -1890308896936944352
-      a7_stoly_2_14: -454013507859922128
-      a7_stoly_2_2: -5540797494064708781
-      a7_stoly_2_3: -8265553763183433943
-      a7_stoly_2_4: -6751606803993569899
-      a7_stoly_2_5: 397416613879505809
-      a7_stoly_2_6: -5158109564560456673
-      a7_stoly_2_7: -4315990234459778238
-      a7_stoly_2_8: -4261870401584371210
-      a7_stoly_2_9: -5061134788943178241
+      chasi: -4315990234459778238
+      lampa: -8265553763183433943
+      monik_back_right: 62848490007788659
+      monik_forward: -5158109564560456673
+      monik_forward_left: 397416613879505809
+      monil_back: -5540797494064708781
+      skaf_horizontal: -6330793074704337006
+      skaf_vartical: -1890308896936944352
+      stol_horizontal: 1444868977726475226
+      trava_v_gorshke: -6751606803993569899
+      voda: -454013507859922128
+      yashiki_horizontal: -4261870401584371210
+      yashiki_horizontal_1: -5527274437145359805
+      yashiki_vertical: -5061134788943178241
+      yashiki_vertical_1: 5010622146891918300
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

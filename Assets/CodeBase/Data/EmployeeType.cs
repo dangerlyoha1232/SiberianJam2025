@@ -3,5 +3,6 @@
     public enum EmployeeType
     {
         DefaultEmployee,
+        ManagerEmployee,
     }
 }
