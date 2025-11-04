@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 7c598faaf5a1d094bb5405492e7b8b6e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1444868977726475226
+    second: a7_stoly_2_0
+  - first:
+      213: 62848490007788659
+    second: a7_stoly_2_1
+  - first:
+      213: -5540797494064708781
+    second: a7_stoly_2_2
+  - first:
+      213: -8265553763183433943
+    second: a7_stoly_2_3
+  - first:
+      213: -6751606803993569899
+    second: a7_stoly_2_4
+  - first:
+      213: 397416613879505809
+    second: a7_stoly_2_5
+  - first:
+      213: -5158109564560456673
+    second: a7_stoly_2_6
+  - first:
+      213: -4315990234459778238
+    second: a7_stoly_2_7
+  - first:
+      213: -4261870401584371210
+    second: a7_stoly_2_8
+  - first:
+      213: -5061134788943178241
+    second: a7_stoly_2_9
+  - first:
+      213: -5527274437145359805
+    second: a7_stoly_2_10
+  - first:
+      213: 5010622146891918300
+    second: a7_stoly_2_11
+  - first:
+      213: -6330793074704337006
+    second: a7_stoly_2_12
+  - first:
+      213: -1890308896936944352
+    second: a7_stoly_2_13
+  - first:
+      213: -454013507859922128
+    second: a7_stoly_2_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: a7_stoly_2_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 808
+        width: 378
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb4e541ea43d0410800000000000000
+      internalID: 1444868977726475226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_1
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 922
+        width: 118
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c75916e584fd000800000000000000
+      internalID: 62848490007788659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_2
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 933
+        width: 132
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35306e919022b13b0800000000000000
+      internalID: -5540797494064708781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_3
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 947
+        width: 110
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927ee8925aada4d80800000000000000
+      internalID: -8265553763183433943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_4
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 940
+        width: 79
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5955ad022697d42a0800000000000000
+      internalID: -6751606803993569899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_5
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 922
+        width: 118
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19360220e48e38500800000000000000
+      internalID: 397416613879505809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_6
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 933
+        width: 132
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1444db0ea6ba68b0800000000000000
+      internalID: -5158109564560456673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_7
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 883
+        width: 167
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24358f4bfb58a14c0800000000000000
+      internalID: -4315990234459778238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_8
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 353
+        width: 278
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9efca337bcad4c0800000000000000
+      internalID: -4261870401584371210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_9
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 353
+        width: 114
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff59ba879bc33c9b0800000000000000
+      internalID: -5061134788943178241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_10
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 329
+        width: 278
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a8ad52f2d2b43b0800000000000000
+      internalID: -5527274437145359805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_11
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 329
+        width: 114
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdba2319b4e498540800000000000000
+      internalID: 5010622146891918300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_12
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 309
+        width: 275
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297beb39d318428a0800000000000000
+      internalID: -6330793074704337006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_13
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 309
+        width: 156
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d1052d21644c5e0800000000000000
+      internalID: -1890308896936944352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a7_stoly_2_14
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 33
+        width: 116
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033c7ccbe1503b9f0800000000000000
+      internalID: -454013507859922128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      a7_stoly_2_0: 1444868977726475226
+      a7_stoly_2_1: 62848490007788659
+      a7_stoly_2_10: -5527274437145359805
+      a7_stoly_2_11: 5010622146891918300
+      a7_stoly_2_12: -6330793074704337006
+      a7_stoly_2_13: -1890308896936944352
+      a7_stoly_2_14: -454013507859922128
+      a7_stoly_2_2: -5540797494064708781
+      a7_stoly_2_3: -8265553763183433943
+      a7_stoly_2_4: -6751606803993569899
+      a7_stoly_2_5: 397416613879505809
+      a7_stoly_2_6: -5158109564560456673
+      a7_stoly_2_7: -4315990234459778238
+      a7_stoly_2_8: -4261870401584371210
+      a7_stoly_2_9: -5061134788943178241
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

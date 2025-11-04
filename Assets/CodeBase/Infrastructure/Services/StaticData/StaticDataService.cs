@@ -8,7 +8,6 @@ namespace CodeBase.Infrastructure.Services.StaticData
     public class StaticDataService : IStaticDataService
     {
         private Dictionary<EmployeeType, EmployeeData> _employees;
-        private Dictionary<LevelType, LevelData> _levels;
         
         public HeroData GetHeroData() =>
             Resources.Load<HeroData>("HeroData/HeroData");
